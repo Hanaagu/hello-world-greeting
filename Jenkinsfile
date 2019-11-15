@@ -16,4 +16,12 @@ node('') {
 		archive 'target/*.jar'
 	}
 	
+	stage("mail") {
+          steps {
+          mail bcc: '', body: '''Hello User the build of your project successed.
+            Jenkins.''', cc: '', from: '', replyTo: '', subject: 'Build succed', to: 'hana.guelleli@esprit.tn'
+          }
+        
+        }
+	
 }
