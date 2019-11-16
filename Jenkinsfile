@@ -47,7 +47,7 @@ pipeline {
 	stage("mail") {
           steps {
           mail bcc: '', body: '''Hello User the build of your project successed.
-            Jenkins.''', cc: '', from: '', replyTo: '', subject: 'Build succed', to: 'mzehsabrine3@gmail.com'
+            Jenkins.''', cc: '', from: 'bejaoui.ikramm02@gmail.com', replyTo: '', subject: 'Build succed', to: 'mzehsabrine3@gmail.com'
           }
         
         }
