@@ -16,9 +16,5 @@ node('') {
 		archive 'target/*.jar'
 	}
 	
-	stage ('Publish'){
-		withMaven(maven:'mm'){
-			bat 'mvn deploy';}
-	}
 	
 }
