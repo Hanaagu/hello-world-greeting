@@ -87,5 +87,13 @@
       </plugin>
     </plugins>
   </reporting>
+  
+  <distributionManagement>
+		<repository>
+			<id>releases</id>
+			<name>releases</name>
+			<url>http://localhost:8081/nexus/content/repositories/releases/</url>
+		</repository>
+	</distributionManagement>
 
 </project>
